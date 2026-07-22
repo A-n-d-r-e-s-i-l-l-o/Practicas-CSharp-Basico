@@ -4,6 +4,7 @@ public class Program
     static void Main()
     {
         CabinaPeaje cabinaPeaje = new CabinaPeaje();
+        cabinaPeaje.MandarVehiculo += Mostrar;
         List<IVehiculo> vehiculos = new List<IVehiculo>()
         {
             new Camion("ALP123",4),
@@ -14,10 +15,10 @@ public class Program
         {
             cabinaPeaje.ProcesarVehiculo(item);
         }
-        foreach(IVehiculo item in cabinaPeaje.MostrarLista())
-        {
-            Console.WriteLine($"El vehiculo de placa {item.Placa} pago {item.CalcularPeaje()}");
-        }
         Console.WriteLine($"Total obtenido:{cabinaPeaje.MostrarReporte()}");
+        static void Mostrar(IVehiculo vehiculo)
+        {
+            Console.WriteLine($"Se proceso el vehiculo con placa {vehiculo.Placa}  pago: {vehiculo.CalcularPeaje()}");
+        }
     }
 }
