@@ -1,0 +1,17 @@
+[
+  {
+    "ID": 1,
+    "Titulo": "Especializarme en C#",
+    "Completado": false
+  },
+  {
+    "ID": 2,
+    "Titulo": "Hacer ejercicio",
+    "Completado": false
+  },
+  {
+    "ID": 3,
+    "Titulo": "Estudiar calculo",
+    "Completado": true
+  }
+]
