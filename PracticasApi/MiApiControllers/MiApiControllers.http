@@ -1,0 +1,6 @@
+@MiApiControllers_HostAddress = http://localhost:5038
+
+GET {{MiApiControllers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
